@@ -4,22 +4,26 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  height: 100vh;           /* full viewport height */
+  margin: 0;               /* remove default margin */
   background-color: #f5f5f5;
 }
 
+
 .form-signin {
-  align-items: center;
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers all inner elements */
+  text-align: center;   /* centers text inside elements like h1, p, etc. */
 }
+
+
 .form-signin .checkbox {
   font-weight: 400;
 }
